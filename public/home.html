@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>FitnessBuddy - Find a Buddy to Get Fit With</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type = 'text/javascript' src = "home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="fitnesslogobud.png" alt="FitnessBuddy Logo">
+                <h1>FitnessBuddy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="buddies.html">Find Buddies</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+        <section class="main">
+            <div class="container">
+                <h2>Find a buddy to get fit with</h2>
+                <p>Connect with like-minded individuals to achieve your fitness goals together!</p>
+                <form  action="buddies.html" class="location-form">
+                    <label for="location">Enter your location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter ZIP code">
+                    <button type="submit">Find Buddies</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3>Answer a few questions to find your perfect workout buddy:</h3>
+                <div class="feature">
+                    <form onsubmit = "createUsers(); return false;" id="questionnaire">
+
+                        <label for="name">Full Name:</label><br><br>
+                        <input type="text" id="name" name="name"><br><br>
+
+                        <label for="email">Email:</label><br><br>
+                        <input type="text" id="email" name="email"><br><br>
+
+                        <label for="availability">Availability:</label><br><br>
+                        <input type="text" id="availability" name="availability"><br><br>
+
+                        <label for="location">Location:</label><br><br>
+                        <input type="text" id="location" name="location"><br><br>
+
+                        <label for="workout-preferences">Workout Preferences:</label><br><br>
+                        <input type="text" id="workout-preferences" name="workoutPreferences"><br><br>
+    
+                        <label for="fitness-goals">Fitness Goals:</label><br><br>
+                        <input type="text" id="fitness-goals" name="fitnessGoals"><br><br>
+    
+                        <button type="submit">Submit</button>
+                    </form>
+
+                
+            </div>
+
+                </div>
+            
+        </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitnessBuddy. All rights reserved.</p>
+            <ul>
+                <li>Privacy Policy</a></li>
+                <li>Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

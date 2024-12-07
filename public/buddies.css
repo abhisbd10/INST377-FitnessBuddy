@@ -1,0 +1,27 @@
+/* This is the default code that should be copied and pasted into each css file 
+and sort of like the blueprint for how the front-end will look */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: hsl(120, 4%, 52%);
+  color: #38341a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin-top: 160px; /* Adjust to match the height of the header */
+  padding: 20px;
+}
+
+/* This is the default code that should be copied and pasted into each css file 
+and sort of like the blueprint for how the front-end will look */

@@ -1,0 +1,143 @@
+/* This is the default code that should be copied and pasted into each css file 
+and sort of like the blueprint for how the front-end will look */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: hsl(120, 4%, 52%);
+  color: #38341a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+/* This is the default code that should be copied and pasted into each css file 
+and sort of like the blueprint for how the front-end will look */
+
+/* Enter location */
+
+.enter_location {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.enter_location h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.enter_location p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.location-form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #38341a;
+}
+
+.location-form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.location-form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.location-form button:hover {
+  background-color: #45a049;
+}
+
+/* Enter information section */
+
+.features {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  margin-bottom: 40px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 15px;
+}
+
+/* Grid layout for enter information section */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.grid_contents input[type="text"] {
+  width: 70%;
+}
+
+.styling_button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.styling_button:hover {
+  background-color: #45a049;
+  cursor: pointer;
+}

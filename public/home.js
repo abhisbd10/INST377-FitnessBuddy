@@ -1,3 +1,5 @@
+const host = 'http://localhost:3000';
+
 async function createUsers(){
     console.log('Creating Users')
     await fetch('http://localhost:3000/Users', {
@@ -19,7 +21,7 @@ await loadUsersData();
 }
 
 async function loadUsersData() {
-    await fetch(`${host}/Users`)
+  await fetch(`${host}/Users`)
       .then((res) => res.json())
       .then((resJson) => {
         const table = document.createElement('table');

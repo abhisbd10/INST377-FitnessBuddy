@@ -19,8 +19,8 @@ body {
 
 main {
   flex: 1;
-  margin-top: 10px;
   padding: 20px;
+  margin-top: 120px;
 }
 
 /* This is the default code that should be copied and pasted into each css file 
@@ -140,4 +140,110 @@ and sort of like the blueprint for how the front-end will look */
 .styling_button:hover {
   background-color: #45a049;
   cursor: pointer;
+}
+
+
+
+
+/* Contact Form section */
+.contact-form-section {
+  background-color: hsl(120, 4%, 52%);
+  padding: 40px 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 10px;;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+/* FAQ section */
+.faq-section {
+  background-color: hsl(120, 4%, 52%);
+  padding: 40px 0;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.faq-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact-section {
+  padding: 4px 0;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #160484;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #333;
 }

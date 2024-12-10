@@ -20,8 +20,16 @@ body {
 main {
   flex: 1;
   padding: 20px;
-  margin-top: 120px;
+  margin-top: 145px;
 }
+
+
+.main_container {
+  flex: 1;
+  padding: 20px;
+  margin-top: 115px;
+}
+
 
 /* This is the default code that should be copied and pasted into each css file 
 and sort of like the blueprint for how the front-end will look */
@@ -246,4 +254,97 @@ and sort of like the blueprint for how the front-end will look */
 
 .contact-info a:hover {
   color: #333;
+}
+
+
+
+
+/* about page */
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 36px; 
+  color: #160484;
+  margin-bottom: 20px;
+}
+
+.about-section h3 {
+  font-size: 32px; 
+  color: #160484;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 18px; 
+  line-height: 1.8;
+}
+
+.useful-links {
+  margin-top: 20px;
+}
+
+.useful-links li {
+  margin-bottom: 10px;
+}
+
+.useful-links a {
+  color: #160484;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.useful-links a:hover {
+  color: #ffd700;
+}
+
+
+/* profile page */
+
+.profile-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+ 
+}
+
+
+
+.profile-info {
+  margin-top: 20px;
+}
+
+.profile-field {
+  margin-bottom: 15px;
+}
+
+.profile-field label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.profile-field .info {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.edit-profile {
+  margin-top: 20px;
+}
+
+.edit-profile button {
+  padding: 10px 20px;
+  background-color: #160484;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile button:hover {
+  background-color: #ffd700;
 }

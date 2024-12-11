@@ -1,8 +1,8 @@
-const host = 'http://localhost:3000';
+const host = window.location.origin;
 
 async function createUsers(){
     console.log('Creating Users')
-    await fetch('http://localhost:3000/Users', {
+    await fetch(`${host}/Users`, {
         method: 'POST',
         body: JSON.stringify({
             userName: `${document.getElementById('name').value}`,

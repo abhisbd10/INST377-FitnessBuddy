@@ -257,6 +257,34 @@ and sort of like the blueprint for how the front-end will look */
 }
 
 
+#form-message {
+  display: none;
+  background-color: #160484;
+  color: #f5f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+#form-message::before {
+  content: '\2713';
+  display: block;
+  font-size: 36px;
+  color:  #f5f3f3;
+  margin-bottom: 10px;
+}
+
+#form-message p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+
 
 
 /* about page */

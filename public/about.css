@@ -28,7 +28,41 @@ main {
 
 /* about page */
 .about-section {
-  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.styles_ab {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.styles_ab_2 {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.styles_useful_links {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 10px;
+  width: 50%;
+  margin: 40 auto;
+  text-align: center;
+}
+
+.grid_useful_links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-width: 0px;
+}
+
+.useful-links {
+  list-style-type: none;
 }
 
 .about-section h2 {

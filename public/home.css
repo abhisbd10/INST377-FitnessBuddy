@@ -97,7 +97,7 @@ and sort of like the blueprint for how the front-end will look */
 
 .features {
   padding: 80px 0;
-  background-color: #fff;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
@@ -133,6 +133,7 @@ and sort of like the blueprint for how the front-end will look */
 }
 
 .styling_button {
+  margin-top: 40px;
   background-color: #4caf50;
   color: #fff;
   border: none;
@@ -151,6 +152,7 @@ and sort of like the blueprint for how the front-end will look */
 /*the audio controls*/
 
 .audio-controls {
+  margin-top: 40px;
   background-color: hsl(120, 4%, 52%);
   color: rgb(31, 31, 31);
   text-align: center;

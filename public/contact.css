@@ -30,7 +30,6 @@ main {
 
 .main_container {
   margin-top: 180px;
-  width: 95%;
 }
 
 .contact-form-section {
@@ -83,6 +82,17 @@ main {
 }
 
 /* FAQ section */
+
+.faqs_section_title {
+  text-align: center;
+  background-color: #f9f9f9;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
 .faq-section {
   background-color: hsl(120, 4%, 52%);
   padding: 40px 0;
@@ -92,12 +102,13 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  margin-top: 10px;
 }
 
 .faq-item {
   background-color: #f9f9f9;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

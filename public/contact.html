@@ -30,7 +30,7 @@
       <div class="main_container">
         <section class="faq-section">
           <div class="container_2">
-            <h2>Frequently Asked Questions</h2>
+            <h2 class="faqs_section_title">Frequently Asked Questions</h2>
             <div class="faq-list">
               <div class="faq-item">
                 <h3>How do I get Fit?</h3>
@@ -56,25 +56,61 @@
 
         <section class="contact-section">
           <div class="container_2">
-            <h2>Contact Us</h2>
-            <p>
-              If you have any issues or questions not covered in the FAQs,
-              please reach out to us:
-            </p>
-            <ul class="contact-info">
-              <li>
-                Email:
-                <a href="mailto:info@fitnessbuddy.com">info@fitnessbuddy.com</a>
-              </li>
-              <li>Phone: +1 (123) 456-7890</li>
-              <li>Address: 123 Fitness Ave, College Park, Md, 23432</li>
-            </ul>
+            <h2 class="h2_contacts">Contact Us</h2>
+            <style>
+              .h2_contacts {
+                text-align: center;
+                background-color: #f9f9f9;
+                width: fit-content;
+                margin: 0 auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 5px;
+              }
+            </style>
+            <div class="styling_container">
+              <p>
+                If you have any issues or questions not covered in the FAQs,
+                please reach out to us:
+              </p>
+              <ul class="contact-info">
+                <li>
+                  Email:
+                  <a href="mailto:info@fitnessbuddy.com"
+                    >info@fitnessbuddy.com</a
+                  >
+                </li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>Address: 123 Fitness Ave, College Park, Md, 23432</li>
+              </ul>
+              <style>
+                .styling_container {
+                  background-color: #f9f9f9;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                  border-radius: 10px;
+                  padding: 20px;
+                  text-align: center;
+                  margin-top: 10px;
+                }
+              </style>
+            </div>
           </div>
         </section>
 
         <section class="contact-form-section">
           <div class="container_2">
-            <h2>Contact Form</h2>
+            <h2 class="h2_contact_form">Contact Form</h2>
+            <style>
+              .h2_contact_form {
+                text-align: center;
+                background-color: #f9f9f9;
+                width: fit-content;
+                margin: 0 auto;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 5px;
+              }
+            </style>
             <form
               id="contact-form"
               class="contact-form"
@@ -95,8 +131,21 @@
               <textarea id="message" name="message" rows="4" required></textarea
               ><br /><br />
 
-              <button type="submit" class="styling_button">Send Message</button>
+              <div class="center_button">
+                <button type="submit" class="styling_button">
+                  Send Message
+                </button>
+              </div>
             </form>
+            <style>
+              .contact-form {
+                margin-top: 20px;
+              }
+
+              .center_button {
+                text-align: center;
+              }
+            </style>
             <div id="form-message" style="display: none">
               Thank you for reaching out, we will get back to you soon.
             </div>

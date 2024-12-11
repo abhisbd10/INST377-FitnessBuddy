@@ -25,3 +25,28 @@ main {
 
 /* This is the default code that should be copied and pasted into each css file 
 and sort of like the blueprint for how the front-end will look */
+
+/*the audio controls*/
+
+.audio-controls {
+  background-color: hsl(120, 4%, 52%);
+  color: rgb(31, 31, 31);
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 200px;
+}
+
+.aud_btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aud_btn:hover {
+  background-color: #45a049;
+}

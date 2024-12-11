@@ -1,30 +1,33 @@
 <html>
   <head>
     <title>FitnessBuddy - Find a Buddy to Get Fit With</title>
-    <link rel="stylesheet" href="home.css"/>
-    <link rel="stylesheet" href="header_footer.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="header_footer.css" />
     <script type="text/javascript" src="contact.js" defer></script>
   </head>
   <body>
-    <header>
-      <a class="home_page_link" href="home.html">
-        <div class="logo">
-          <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
-          <h1>FitnessBuddy</h1>
-        </div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="buddies.html">Find Buddies</a></li>
-          <li><a href="profile.html">Profile</a></li>
-        </ul>
-      </nav>
-    </header>
+    <section class="width_adjustment">
+      <header>
+        <a class="home_page_link" href="home.html">
+          <div class="logo">
+            <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
+            <h1>FitnessBuddy</h1>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="buddies.html">Find Buddies</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <div class = "main_container">
+      <div class="main_container">
         <section class="faq-section">
           <div class="container_2">
             <h2>Frequently Asked Questions</h2>
@@ -35,51 +38,94 @@
               </div>
               <div class="faq-item">
                 <h3>Can I change my fitness preferences after signing up?</h3>
-                <p>Yes, you can update your fitness preferences anytime by visiting your Profile page and editing your settings.</p>
+                <p>
+                  Yes, you can update your fitness preferences anytime by
+                  visiting your Profile page and editing your settings.
+                </p>
               </div>
               <div class="faq-item">
                 <h3>How can I find a workout buddy near me?</h3>
-                <p>Use our Find Buddies page and enter your location to discover like-minded individuals in your area.</p>
+                <p>
+                  Use our Find Buddies page and enter your location to discover
+                  like-minded individuals in your area.
+                </p>
               </div>
             </div>
           </div>
         </section>
-    
+
         <section class="contact-section">
           <div class="container_2">
             <h2>Contact Us</h2>
-            <p>If you have any issues or questions not covered in the FAQs, please reach out to us:</p>
+            <p>
+              If you have any issues or questions not covered in the FAQs,
+              please reach out to us:
+            </p>
             <ul class="contact-info">
-              <li>Email: <a href="mailto:info@fitnessbuddy.com">info@fitnessbuddy.com</a></li>
+              <li>
+                Email:
+                <a href="mailto:info@fitnessbuddy.com">info@fitnessbuddy.com</a>
+              </li>
               <li>Phone: +1 (123) 456-7890</li>
               <li>Address: 123 Fitness Ave, College Park, Md, 23432</li>
             </ul>
           </div>
         </section>
-    
+
         <section class="contact-form-section">
           <div class="container_2">
             <h2>Contact Form</h2>
-            <form id="contact-form" class="contact-form" onsubmit="return submitForm()">
-              <label for="name">Name:</label><br>
-              <input type="text" id="name" name="name" required><br><br>
-              
-              <label for="email">Email:</label><br>
-              <input type="email" id="email" name="email" required><br><br>
-              
-              <label for="message">Message:</label><br>
-              <textarea id="message" name="message" rows="4" required></textarea><br><br>
-              
+            <form
+              id="contact-form"
+              class="contact-form"
+              onsubmit="return submitForm()"
+            >
+              <label for="name">Name:</label><br />
+              <input type="text" id="name" name="name" required /><br /><br />
+
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+
+              <label for="message">Message:</label><br />
+              <textarea id="message" name="message" rows="4" required></textarea
+              ><br /><br />
+
               <button type="submit" class="styling_button">Send Message</button>
             </form>
-            <div id="form-message" style="display:none;">
-                Thank you for reaching out, we will get back to you soon.
-              </div>
+            <div id="form-message" style="display: none">
+              Thank you for reaching out, we will get back to you soon.
+            </div>
           </div>
         </section>
-    </div>
+      </div>
 
-
+      <section class="audio-controls">
+        <h3>
+          <span class="small_detail">Fun Fact: </span>On our website, you can
+          navigate from page to page using Audio!
+        </h3>
+        <p>Make sure your mic is enabled to use this feature:</p>
+        <ul>
+          <p>
+            <strong>Instructions:</strong> Say <em>"Navigate to [page]"</em>
+          </p>
+        </ul>
+        <div class="audio-buttons">
+          <button class="aud_btn" id="audio-on">Turn On Listening</button>
+          <button class="aud_btn" id="audio-off">Turn Off Listening</button>
+        </div>
+        <style>
+          .small_detail {
+            font-size: 26px;
+          }
+        </style>
+      </section>
+    </section>
     <footer>
       <div class="container_4">
         <p>&copy; 2024 FitnessBuddy. All rights reserved.</p>

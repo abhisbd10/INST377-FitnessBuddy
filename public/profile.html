@@ -1,30 +1,33 @@
 <html>
   <head>
     <title>FitnessBuddy - Find a Buddy to Get Fit With</title>
-    <link rel="stylesheet" href="home.css"/>
-    <link rel="stylesheet" href="header_footer.css"/>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="header_footer.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
     <script type="text/javascript" src="profile.js" defer></script>
   </head>
   <body>
-    <main>
-    <header>
-      <a class="home_page_link" href="home.html">
-        <div class="logo">
-          <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
-          <h1>FitnessBuddy</h1>
-        </div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="buddies.html">Find Buddies</a></li>
-          <li><a href="profile.html">Profile</a></li>
-        </ul>
-      </nav>
-    </header>
-   
+    <section class="width_adjustment">
+      <main>
+        <header>
+          <a class="home_page_link" href="home.html">
+            <div class="logo">
+              <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
+              <h1>FitnessBuddy</h1>
+            </div>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="buddies.html">Find Buddies</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </nav>
+        </header>
+
         <section class="profile-section">
           <div class="container">
             <h2>User Profile</h2>
@@ -32,43 +35,98 @@
               <div class="profile-field">
                 <label for="name">Name:</label>
                 <span class="info" id="name">Abhishek Subedi</span>
-                <input type="text" id="edit-name" class="edit-input" style="display:none;">
+                <input
+                  type="text"
+                  id="edit-name"
+                  class="edit-input"
+                  style="display: none"
+                />
               </div>
               <div class="profile-field">
                 <label for="email">Email:</label>
                 <span class="info" id="email">abhi.sbd@gmail.com</span>
-                <input type="email" id="edit-email" class="edit-input" style="display:none;">
+                <input
+                  type="email"
+                  id="edit-email"
+                  class="edit-input"
+                  style="display: none"
+                />
               </div>
               <div class="profile-field">
                 <label for="fitness-preferences">Fitness Preferences:</label>
-                <span class="info" id="fitness-preferences">Weightlifting, Cardio</span>
-                <input type="text" id="edit-fitness" class="edit-input" style="display:none;">
+                <span class="info" id="fitness-preferences"
+                  >Weightlifting, Cardio</span
+                >
+                <input
+                  type="text"
+                  id="edit-fitness"
+                  class="edit-input"
+                  style="display: none"
+                />
               </div>
               <div class="profile-field">
                 <label for="fitness-goals">Fitness Goals:</label>
                 <span class="info" id="fitness-goals">Build muscle</span>
-                <input type="text" id="edit-goals" class="edit-input" style="display:none;">
+                <input
+                  type="text"
+                  id="edit-goals"
+                  class="edit-input"
+                  style="display: none"
+                />
               </div>
               <div class="profile-field">
                 <label for="availability">Availability:</label>
                 <span class="info" id="availability">Monday and Tuesday</span>
-                <input type="text" id="edit-availability" class="edit-input" style="display:none;">
+                <input
+                  type="text"
+                  id="edit-availability"
+                  class="edit-input"
+                  style="display: none"
+                />
               </div>
               <div class="profile-field">
                 <label for="location">Location:</label>
                 <span class="info" id="location">College Park, MD</span>
-                <input type="text" id="edit-location" class="edit-input" style="display:none;">
+                <input
+                  type="text"
+                  id="edit-location"
+                  class="edit-input"
+                  style="display: none"
+                />
               </div>
               <div class="edit-profile">
                 <button id="edit-button">Edit Profile</button>
-                <button id="save-button" style="display:none;">Save Changes</button>
+                <button id="save-button" style="display: none">
+                  Save Changes
+                </button>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-
+      <section class="audio-controls">
+        <h3>
+          <span class="small_detail">Fun Fact: </span>On our website, you can
+          navigate from page to page using Audio!
+        </h3>
+        <p>Make sure your mic is enabled to use this feature:</p>
+        <ul>
+          <p>
+            <strong>Instructions:</strong> Say <em>"Navigate to [page]"</em>
+          </p>
+        </ul>
+        <div class="audio-buttons">
+          <button class="aud_btn" id="audio-on">Turn On Listening</button>
+          <button class="aud_btn" id="audio-off">Turn Off Listening</button>
+        </div>
+        <style>
+          .small_detail {
+            font-size: 26px;
+          }
+        </style>
+      </section>
+    </section>
     <footer>
       <div class="container_4">
         <p>&copy; 2024 FitnessBuddy. All rights reserved.</p>

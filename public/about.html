@@ -1,65 +1,118 @@
 <html>
   <head>
     <title>FitnessBuddy - Find a Buddy to Get Fit With</title>
-    <link rel="stylesheet" href="home.css"/>
-    <link rel="stylesheet" href="header_footer.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="header_footer.css" />
+    <script type="text/javascript" src="about.js" defer></script>
   </head>
   <body>
-    <header>
-      <a class="home_page_link" href="home.html">
-        <div class="logo">
-          <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
-          <h1>FitnessBuddy</h1>
-        </div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="buddies.html">Find Buddies</a></li>
-          <li><a href="profile.html">Profile</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    <section class="width_adjustment">
+      <header>
+        <a class="home_page_link" href="home.html">
+          <div class="logo">
+            <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
+            <h1>FitnessBuddy</h1>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="buddies.html">Find Buddies</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
         <section class="about-section">
           <div class="container_2">
-            <h2>About FitnessBuddy</h2>
-            <p>FitnessBuddy is a platform designed to help individuals connect with like-minded people to achieve their fitness goals 
-                together. Whether you're looking for a workout partner, interested in group activities, or simply want to share your 
-                fitness journey, FitnessBuddy provides the tools and community support to make it happen.</p>
-            
-            <h3>Our Mission</h3>
-            <p>Our mission at FitnessBuddy is to promote fitness and well-being by fostering a supportive community where individuals 
-                can motivate each other, share experiences, and find companionship in their fitness journeys.</p>
-            
-            <h3>How It Works</h3>
-            <p>Users will answers some question and specify their fitness preferences and goals. Through our platform, they can search for workout buddies 
-                based on location, fitness interests, and availability. Whether you're into yoga, running, weightlifting, or any other form of exercise, 
-                FitnessBuddy helps you find the right partner to stay motivated and accountable.</p>
-            
-            <h3>Useful Links</h3>
-            <ul class="useful-links">
-              <li><a href="https://www.facebook.com/FitnessBuddy">Facebook</a></li>
-              <li><a href="https://twitter.com/ultimatefitnes_">Twitter</a></li>
-              <li><a href="https://www.instagram.com/muscleandfitness/?hl=en">Instagram</a></li>
-              <li><a href="https://www.medicalnewstoday.com/articles/153390">Fitness Articles</a></li>
-            </ul>
+            <div class="styles_ab">
+              <h2>About FitnessBuddy</h2>
+              <p>
+                FitnessBuddy is a platform designed to help individuals connect
+                with like-minded people to achieve their fitness goals together.
+                Whether you're looking for a workout partner, interested in
+                group activities, or simply want to share your fitness journey,
+                FitnessBuddy provides the tools and community support to make it
+                happen.
+              </p>
+            </div>
+
+            <div class="styles_ab_2">
+              <h3>Our Mission</h3>
+              <p>
+                Our mission at FitnessBuddy is to promote fitness and well-being
+                by fostering a supportive community where individuals can
+                motivate each other, share experiences, and find companionship
+                in their fitness journeys.
+              </p>
+            </div>
+
+            <div class="styles_ab_2">
+              <h3>How It Works</h3>
+              <p>
+                Users will answers some question and specify their fitness
+                preferences and goals. Through our platform, they can search for
+                workout buddies based on location, fitness interests, and
+                availability. Whether you're into yoga, running, weightlifting,
+                or any other form of exercise, FitnessBuddy helps you find the
+                right partner to stay motivated and accountable.
+              </p>
+            </div>
+
+            <div class="styles_useful_links">
+              <h3>Useful Links</h3>
+              <ul class="useful-links">
+                <div class="grid_useful_links">
+                  <li>
+                    <a href="https://www.facebook.com/FitnessBuddy"
+                      >- Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/ultimatefitnes_">- Twitter</a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/muscleandfitness/?hl=en"
+                      >- Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.medicalnewstoday.com/articles/153390"
+                      >- Fitness Articles</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
         </section>
-    </main>
-
-   
-
-
-
-
-
-
-
-
-
+        <section class="audio-controls">
+          <h3>
+            <span class="small_detail">Fun Fact: </span>On our website, you can
+            navigate from page to page using Audio!
+          </h3>
+          <p>Make sure your mic is enabled to use this feature:</p>
+          <ul>
+            <p>
+              <strong>Instructions:</strong> Say <em>"Navigate to [page]"</em>
+            </p>
+          </ul>
+          <div class="audio-buttons">
+            <button class="aud_btn" id="audio-on">Turn On Listening</button>
+            <button class="aud_btn" id="audio-off">Turn Off Listening</button>
+          </div>
+          <style>
+            .small_detail {
+              font-size: 26px;
+            }
+          </style>
+        </section>
+      </main>
+    </section>
     <footer>
       <div class="container_4">
         <p>&copy; 2024 FitnessBuddy. All rights reserved.</p>

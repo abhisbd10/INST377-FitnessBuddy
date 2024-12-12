@@ -1,0 +1,125 @@
+/* This is the default code that should be copied and pasted into each css file 
+and sort of like the blueprint for how the front-end will look */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: hsl(120, 4%, 52%);
+  color: #38341a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin-top: 160px; /* Adjust to match the height of the header */
+  padding: 20px;
+}
+
+/* This is the default code that should be copied and pasted into each css file 
+  and sort of like the blueprint for how the front-end will look */
+
+/* about page */
+.about-section {
+  margin-top: 60px;
+}
+
+.styles_ab {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.styles_ab_2 {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.styles_useful_links {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 10px;
+  width: 50%;
+  margin: 40 auto;
+  text-align: center;
+}
+
+.grid_useful_links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-width: 0px;
+}
+
+.useful-links {
+  list-style-type: none;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  color: #160484;
+  margin-bottom: 20px;
+}
+
+.about-section h3 {
+  font-size: 32px;
+  color: #160484;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.useful-links {
+  margin-top: 20px;
+}
+
+.useful-links li {
+  margin-bottom: 10px;
+}
+
+.useful-links a {
+  color: #160484;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.useful-links a:hover {
+  color: #ffd700;
+}
+
+/*the audio controls*/
+
+.audio-controls {
+  background-color: hsl(120, 4%, 52%);
+  color: rgb(31, 31, 31);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.aud_btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aud_btn:hover {
+  background-color: #45a049;
+}

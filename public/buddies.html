@@ -1,31 +1,60 @@
 <html lang="en">
   <head>
     <title>Matched Workout Buddies - FitnessBuddy</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
     <link rel="stylesheet" href="buddies.css" />
     <link rel="stylesheet" href="header_footer.css" />
+    <script type="text/javascript" src="buddies.js" defer></script>
   </head>
   <body>
-    <header>
-      <a class="home_page_link" href="home.html">
-        <div class="logo">
-          <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
-          <h1>FitnessBuddy</h1>
-        </div>
-      </a>
-      <nav>
+    <section class="width_adjustment">
+      <header>
+        <a class="home_page_link" href="home.html">
+          <div class="logo">
+            <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
+            <h1>FitnessBuddy</h1>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="buddies.html">Find Buddies</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!--Our main content-->
+      </main>
+
+      <section class="audio-controls">
+        <h3>
+          <span class="small_detail">Fun Fact: </span>On our website, you can
+          navigate from page to page using Audio!
+        </h3>
+        <p>Make sure your mic is enabled to use this feature:</p>
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="buddies.html">Find Buddies</a></li>
-          <li><a href="profile.html">Profile</a></li>
+          <p>
+            <strong>Instructions:</strong> Say <em>"Navigate to [page]"</em>
+          </p>
         </ul>
       </nav>
     </header>
-
-   
-     
-
+        <div class="audio-buttons">
+          <button class="aud_btn" id="audio-on">Turn On Listening</button>
+          <button class="aud_btn" id="audio-off">Turn Off Listening</button>
+        </div>
+        <style>
+          .small_detail {
+            font-size: 26px;
+          }
+        </style>
+      </section>
+    </section>
     <footer>
       <div class="container_4">
         <p>&copy; 2024 FitnessBuddy. All rights reserved.</p>

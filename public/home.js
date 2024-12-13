@@ -23,7 +23,7 @@ async function createUsers() {
 }
 
 async function loadUsersData() {
-  await fetch(`${host}/user`)
+  await fetch(`${host}/Users`)
     .then((res) => res.json())
     .then((resJson) => {
       const table = document.createElement("table");

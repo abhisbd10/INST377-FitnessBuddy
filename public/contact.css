@@ -183,21 +183,24 @@ main {
 /*the audio controls*/
 
 .audio-controls {
-  background-color: hsl(120, 4%, 52%);
-  color: rgb(31, 31, 31);
+  margin-top: 60px;
+  color: #38341a;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .aud_btn {
   background-color: #4caf50;
   color: #fff;
   border: none;
-  padding: 5px 10px;
+  padding: 8px 16px; 
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px; 
 }
 
 .aud_btn:hover {

@@ -2,7 +2,7 @@ const host = window.location.origin;
 
 async function createUsers() {
   console.log("Creating Users");
-  await fetch(`${host}/Users`, {
+  await fetch(`${host}/user`, {
     method: "POST",
     body: JSON.stringify({
       userName: `${document.getElementById("name").value}`,
@@ -23,7 +23,7 @@ async function createUsers() {
 }
 
 async function loadUsersData() {
-  await fetch(`${host}/Users`)
+  await fetch(`${host}/user`)
     .then((res) => res.json())
     .then((resJson) => {
       const table = document.createElement("table");

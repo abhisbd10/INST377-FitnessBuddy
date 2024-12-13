@@ -17,21 +17,6 @@ app.get('/',(req, res) =>{
     res.sendFile('public/home.html', {root: __dirname });
 })
 
-app.get('/',(req, res) =>{
-    res.sendFile('public/buddies.html', {root: __dirname });
-})
-
-app.get('/',(req, res) =>{
-    res.sendFile('public/contact.html', {root: __dirname });
-})
-
-app.get('/',(req, res) =>{
-    res.sendFile('public/about.html', {root: __dirname });
-})
-
-app.get('/',(req, res) =>{
-    res.sendFile('public/profile.html', {root: __dirname });
-})
 
 app.get('/users', async (req, res) => {
     console.log('Attempting to get all the users.');

@@ -100,6 +100,19 @@ main {
   color: #ffd700;
 }
 
+.useful-links .social-icon img {
+  width: 65px; 
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; 
+  transition: transform 0.3s ease;
+}
+
+.useful-links .social-icon img:hover {
+  transform: scale(1.2); 
+}
+
 /*the audio controls*/
 
 .audio-controls {

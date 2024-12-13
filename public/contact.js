@@ -37,9 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
           case "find buddies":
             window.location.href = "buddies.html";
             break;
-          case "profile":
-            window.location.href = "profile.html";
-            break;
           default:
             alert(`Unknown page: ${page}`);
         }

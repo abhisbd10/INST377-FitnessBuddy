@@ -75,6 +75,7 @@ main {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+ 
 }
 
 .contact-form button:hover {
@@ -91,6 +92,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 5px;
+  color:#160484;
 }
 
 .faq-section {
@@ -125,6 +127,16 @@ main {
 .contact-info {
   list-style-type: none;
   padding: 0;
+}
+
+.h2_contact_form{
+  color: #160484;
+
+}
+
+.h2_contacts{
+  color: #160484;
+
 }
 
 .contact-info li {

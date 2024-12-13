@@ -88,7 +88,8 @@ async function loadUsersData() {
         preExistingTable.remove();
       }
 
-      document.body.appendChild(table);
+      const tableContainer = document.getElementById('tableinfo'); 
+      tableContainer.appendChild(table);
     });
 }
 

@@ -8,6 +8,7 @@
     <script type="text/javascript" src="home.js" defer></script>
   </head>
   <body>
+   
     <section class="width_adjustment">
       <header>
         <a class="home_page_link" href="home.html">
@@ -55,18 +56,18 @@
               <div class="grid">
                 <div class="grid_contents">
                   <label for="name">Full Name:</label><br /><br />
-                  <input type="text" id="name" name="name" /><br /><br />
+                  <input type="text" required id="name" name="name" /><br /><br />
                 </div>
 
                 <div class="grid_contents">
                   <label for="email">Email:</label><br /><br />
-                  <input type="text" id="email" name="email" /><br /><br />
+                  <input type="text" required id="email" name="email" /><br /><br />
                 </div>
 
                 <div class="grid_contents">
                   <label for="availability">Availability:</label><br /><br />
                   <input
-                    type="text"
+                    type="text" required
                     id="availability"
                     name="availability"
                   /><br /><br />
@@ -75,7 +76,7 @@
                 <div class="grid_contents">
                   <label for="location">Location:</label><br /><br />
                   <input
-                    type="text"
+                    type="text" required
                     id="location"
                     name="location"
                   /><br /><br />
@@ -85,7 +86,7 @@
                   <label for="workout-preferences">Workout Preferences:</label
                   ><br /><br />
                   <input
-                    type="text"
+                    type="text" required
                     id="workout-preferences"
                     name="workoutPreferences"
                   /><br /><br />
@@ -94,7 +95,7 @@
                 <div class="grid_contents">
                   <label for="fitness-goals">Fitness Goals:</label><br /><br />
                   <input
-                    type="text"
+                    type="text" required
                     id="fitness-goals"
                     name="fitnessGoals"
                   /><br /><br />
@@ -104,7 +105,10 @@
             </form>
           </div>
         </div>
-      </section>
+      </section><br>
+      <div id = "tableinfo">
+
+      </div>
 
      
       
@@ -131,6 +135,7 @@
         </style>
       </section>
     </section>
+ 
 
     <footer>
       <div class="container_4">

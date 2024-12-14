@@ -6,6 +6,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
     <script type="text/javascript" src="home.js" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </head>
   <body>
    
@@ -23,7 +26,6 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="buddies.html">Find Buddies</a></li>
-          
           </ul>
         </nav>
       </header>
@@ -45,6 +47,17 @@
             />
             <button type="submit">Find Buddies</button>
           </form>
+        </div>
+      </section>
+
+      
+      <section class="map-section">
+        <div class="container_2">
+          <h2>Find Buddies on the Map</h2>
+          <p>Enter your ZIP code to view your location on the map.</p>
+          <input type="text" id="zipCode" placeholder="Enter ZIP Code" />
+          <button id="findBuddies">Find Buddies</button>
+          <div id="map" style="height: 400px;"></div>
         </div>
       </section>
 
@@ -106,12 +119,7 @@
           </div>
         </div>
       </section><br>
-      <div id = "tableinfo">
-
-      </div>
-
-     
-      
+      <div id="tableinfo"></div>
 
       <section class="audio-controls">
         <h3>
@@ -135,7 +143,6 @@
         </style>
       </section>
     </section>
- 
 
     <footer>
       <div class="container_4">
@@ -147,5 +154,50 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+ 
+      document.addEventListener("DOMContentLoaded", () => {
+        const findBuddiesButton = document.getElementById("findBuddies");
+        const mapDiv = document.getElementById("map");
+
+        findBuddiesButton.addEventListener("click", () => {
+          const zipCode = document.getElementById("zipCode").value;
+
+          if (!zipCode) {
+            alert("Please enter a zip code.");
+            return;
+          }
+
+      
+          fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zipCode}&format=json`)
+            .then(response => response.json())
+            .then(data => {
+              if (data.length > 0) {
+                const location = data[0];
+                initMap(location.lat, location.lon);
+              } else {
+                alert("Could not fetch location. Please check the zip code.");
+              }
+            })
+            .catch(error => console.error("Error fetching location:", error));
+        });
+
+        function initMap(lat, lng) {
+          
+          const map = L.map(mapDiv).setView([lat, lng], 12); 
+
+         
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+
+          L.marker([lat, lng]).addTo(map)
+            .bindPopup("You are here!")
+            .openPopup();
+        }
+      });
+    </script>
   </body>
 </html>
+

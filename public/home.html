@@ -30,38 +30,26 @@
         </nav>
       </header>
 
-      <section class="enter_location">
-        <div class="container_2">
-          <h2>Find a buddy to get fit with</h2>
-          <p>
-            Connect with like-minded individuals to achieve your fitness goals
-            together!
-          </p>
-          <form action="buddies.html" class="location-form">
-            <label for="location">Enter your location:</label>
-            <input
-              type="text"
-              id="location"
-              name="location"
-              placeholder="Enter ZIP code"
-            />
-            <button type="submit">Find Buddies</button>
-          </form>
-        </div>
-      </section>
+      
+         
 
       
-      <section class="map-section">
+      <section class="enter_location">
         <div class="container_2">
           <h2>Find Buddies on the Map</h2>
+          <p>Connect with like-minded individuals to achieve your fitness goals
+            together! </p>
+            <img src ="Gym-Buddy-Feature.jpg"><br>
           <p>Enter your ZIP code to view your location on the map.</p>
+          <div class = "location-form">
           <input type="text" id="zipCode" placeholder="Enter ZIP Code" />
           <button id="findBuddies">Find Buddies</button>
-          <div id="map" style="height: 400px;"></div>
+        </div><br>
+        <div id="map" style="height: 400px;"></div>
         </div>
       </section>
-
-      <section class="features">
+      
+      <section id="features" class="features">
         <div class="container_3">
           <h3>Answer a few questions to find your perfect workout buddy:</h3>
           <div class="feature">
@@ -155,49 +143,9 @@
       </div>
     </footer>
 
-    <script>
- 
-      document.addEventListener("DOMContentLoaded", () => {
-        const findBuddiesButton = document.getElementById("findBuddies");
-        const mapDiv = document.getElementById("map");
-
-        findBuddiesButton.addEventListener("click", () => {
-          const zipCode = document.getElementById("zipCode").value;
-
-          if (!zipCode) {
-            alert("Please enter a zip code.");
-            return;
-          }
-
-      
-          fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zipCode}&format=json`)
-            .then(response => response.json())
-            .then(data => {
-              if (data.length > 0) {
-                const location = data[0];
-                initMap(location.lat, location.lon);
-              } else {
-                alert("Could not fetch location. Please check the zip code.");
-              }
-            })
-            .catch(error => console.error("Error fetching location:", error));
-        });
-
-        function initMap(lat, lng) {
-          
-          const map = L.map(mapDiv).setView([lat, lng], 12); 
-
-         
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          }).addTo(map);
-
-          L.marker([lat, lng]).addTo(map)
-            .bindPopup("You are here!")
-            .openPopup();
-        }
-      });
-    </script>
+   
+     
+  
   </body>
 </html>
 

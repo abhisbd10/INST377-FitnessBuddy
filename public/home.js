@@ -141,3 +141,49 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const findBuddiesButton = document.getElementById("findBuddies");
+  const mapDiv = document.getElementById("map");
+
+  findBuddiesButton.addEventListener("click", () => {
+    const zipCode = document.getElementById("zipCode").value;
+
+    if (!zipCode) {
+      alert("Please enter a zip code.");
+      return;
+    }
+
+    fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zipCode}&format=json`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.length > 0) {
+          const location = data[0];
+          initMap(location.lat, location.lon);
+          scrollToFeatures(); // Scroll to features section after map initialization
+        } else {
+          alert("Could not fetch location. Please check the zip code.");
+        }
+      })
+      .catch(error => console.error("Error fetching location:", error));
+  });
+
+  function initMap(lat, lng) {
+    const map = L.map(mapDiv).setView([lat, lng], 12); 
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([lat, lng]).addTo(map)
+      .bindPopup("You are here!")
+      .openPopup();
+  }
+
+  function scrollToFeatures() {
+    const featuresSection = document.getElementById('features');
+    featuresSection.scrollIntoView({ behavior: 'smooth' });
+  }
+});

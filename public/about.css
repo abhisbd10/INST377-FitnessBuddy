@@ -49,10 +49,10 @@ main {
 .styles_useful_links {
   background-color: #f9f9f9;
   border-radius: 20px;
-  padding: 10px;
-  width: 50%;
-  margin: 40 auto;
+  padding: 20px;
   text-align: center;
+  margin: 40px auto; /* Center horizontally and add margin for spacing */
+  width: 60%; /* Adjust width as needed */
 }
 
 .grid_useful_links {

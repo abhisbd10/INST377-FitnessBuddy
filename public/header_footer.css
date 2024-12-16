@@ -19,11 +19,17 @@ header {
   z-index: 1000;
 }
 
+
+
 .logo {
   display: flex;
-  margin-left: 40px;
   align-items: center;
+  margin-left: 40px;
   margin-top: 7px;
+}
+.logo h1 {
+  font-size: 24px; /* Adjust font size of FitnessBuddy text */
+  margin: 0; /* Remove default margin */
 }
 
 nav {

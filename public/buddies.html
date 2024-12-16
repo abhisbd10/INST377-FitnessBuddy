@@ -1,93 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Matched Workout Buddies - FitnessBuddy</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
-    <link rel="stylesheet" href="buddies.css" />
-    <link rel="stylesheet" href="header_footer.css" />
-    <script type="text/javascript" src="buddies.js" defer></script>
-  </head>
-  <body>
-    <section class="width_adjustment">
-      <header>
-        <a class="home_page_link" href="home.html">
-          <div class="logo">
-            <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
-            <h1>FitnessBuddy</h1>
-          </div>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="buddies.html">Find Buddies</a></li>
-  
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <!--Our main content-->
-        <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Finder</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8">
+  <title>Matched Workout Buddies - FitnessBuddy</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+  <link rel="stylesheet" href="buddies.css" />
+  <link rel="stylesheet" href="header_footer.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="buddies.js" defer></script>
 </head>
 <body>
-    <h1>Find Gyms in Your Area</h1>
-    <form id="zipcodeForm">
-        <label for="zipcode">Enter your Zipcode:</label>
-        <input type="text" id="zipcode" required>
-        <button type="submit">Find Gyms</button>
-    </form>
-
-    <div id="gymResults"></div>
-    <canvas id="gymChart" width="400" height="200"></canvas>
-
-    <script src="buddies.js"></script>
-</body>
-      </main>
-
-      <section class="audio-controls">
-        <h3>
-          <span class="small_detail">Fun Fact: </span>On our website, you can
-          navigate from page to page using Audio!
-        </h3>
-        <p>Make sure your mic is enabled to use this feature:</p>
+  <section class="width_adjustment">
+    <header>
+      <a class="home_page_link" href="home.html">
+        <div class="logo">
+          <img src="fitnesslogobud.png" alt="FitnessBuddy Logo" />
+          <h1>FitnessBuddy</h1>
+        </div>
+      </a>
+      <nav>
         <ul>
-          <p>
-            <strong>Instructions:</strong> Say <em>"Navigate to [page]"</em>
-          </p>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="buddies.html">Find Buddies</a></li>
         </ul>
       </nav>
     </header>
-        <div class="audio-buttons">
-          <button class="aud_btn" id="audio-on">Turn On Listening</button>
-          <button class="aud_btn" id="audio-off">Turn Off Listening</button>
+
+    <div class="main">
+      <h2>Find Gyms in Your Area</h1>
+      <form id="zipcodeForm">
+        <div class="style">
+          <label for="zipcode">Enter your Zipcode:</label>
+          <input type="text" id="zipcode" required><br>
+          <button type="submit">Find Gyms</button><br>
         </div>
-        <style>
-          .small_detail {
-            font-size: 26px;
-          }
-        </style>
-      </section>
-    </section>
-    <footer>
-      <div class="container_4">
-        <p>&copy; 2024 FitnessBuddy. All rights reserved.</p>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      </form>
+
+      <div id="gymResults"></div>
+      <canvas id="gymChart" width="400" height="200"></canvas>
+    </div>
+
+    <section class="audio-controls">
+      <h3><span class="small_detail">Fun Fact: </span>On our website, you can navigate from page to page using Audio!</h3>
+      <p>Make sure your mic is enabled to use this feature:</p>
+      <ul>
+        <p><strong>Instructions:</strong> Say <em>"Navigate to [page]"</em></p>
+      </ul>
+      <div class="audio-buttons">
+        <button class="aud_btn" id="audio-on">Turn On Listening</button>
+        <button class="aud_btn" id="audio-off">Turn Off Listening</button>
       </div>
-    </footer>
-  </body>
+    </section>
+  </section>
+
+  <footer>
+    <div class="container_4">
+      <p>&copy; 2024 FitnessBuddy. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>
-
-
-
-

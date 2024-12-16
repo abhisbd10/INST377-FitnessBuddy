@@ -30,10 +30,7 @@ document.getElementById('zipcodeForm').addEventListener('submit', function(event
                       displayGyms(placesData.elements);
                   }
               })
-              .catch(error => {
-                  console.error('Error fetching fitness centres:', error);
-                  document.getElementById('gymResults').innerHTML = 'An error occurred while fetching fitness centre data.';
-              });
+              
       })
       .catch(error => {
           console.error('Error geocoding zipcode:', error);
